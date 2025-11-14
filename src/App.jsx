@@ -235,12 +235,17 @@ function App() {
         <div className="app">
             <div className="chat_container">
                 <div className="chat_header">
-                    <h1>ESchaT</h1>
+                        <h1>ESchaT</h1>
                     <p>질문해주시면 답변해드립니다</p>
                 </div>
                 <div className="messages_container">
                     {messages.length === 0 && (
                         <div className="welcome_message">
+                            <img 
+                                src="/favicon.png" 
+                                alt="ESchaT 로고" 
+                                className="welcome_logo"
+                            />
                             <p>안녕하세요! ESchaT입니다.</p>
                             <p>무엇이 궁금하신가요?</p>
                         </div>
