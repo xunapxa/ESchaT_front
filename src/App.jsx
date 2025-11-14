@@ -69,6 +69,7 @@ function App() {
 
     useEffect(() => {
         return () => {
+            // eslint-disable-next-line react-hooks/exhaustive-deps
             const timeouts = typing_timeout_ref.current;
             if (timeouts) {
                 Object.values(timeouts).forEach((timeout) => {
