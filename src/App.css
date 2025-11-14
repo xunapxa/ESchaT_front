@@ -132,6 +132,105 @@
     border-color: #fcc;
 }
 
+.confirmation_ui {
+    padding: 16px;
+    background: #fff8e1;
+    border: 2px solid #ffc107;
+    border-radius: 12px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 2px 8px rgba(255, 193, 7, 0.2);
+}
+
+.confirmation_message {
+    margin-bottom: 16px;
+}
+
+.confirmation_question {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.matched_question_text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+    padding: 8px 12px;
+    background: #fff;
+    border-radius: 6px;
+    border-left: 3px solid #ffc107;
+}
+
+.alternative_questions {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #ffe082;
+}
+
+.alternative_label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.alternative_list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.alternative_question_btn {
+    padding: 10px 16px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #667eea;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s;
+}
+
+.alternative_question_btn:hover {
+    background: #f5f5f5;
+    border-color: #667eea;
+    transform: translateX(4px);
+}
+
+.alternative_question_btn:active {
+    transform: translateX(2px);
+}
+
+.confirmation_buttons {
+    margin-top: 16px;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.confirm_button {
+    padding: 10px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.confirm_button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.confirm_button:active {
+    transform: translateY(0);
+}
+
 .typing_cursor {
     display: inline-block;
     margin-left: 2px;
@@ -271,6 +370,24 @@
 
     .input_container {
         padding: 12px 16px;
+    }
+
+    .confirmation_ui {
+        padding: 12px;
+    }
+
+    .alternative_list {
+        gap: 6px;
+    }
+
+    .alternative_question_btn {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .confirm_button {
+        padding: 8px 20px;
+        font-size: 14px;
     }
 }
 
