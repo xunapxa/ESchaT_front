@@ -72,10 +72,15 @@ function App() {
     // 컴포넌트 언마운트 시 타이머 정리
     useEffect(() => {
         return () => {
+            // eslint-disable-next-line react-hooks/exhaustive-deps
             const timeouts = typing_timeout_ref.current;
-            Object.values(timeouts).forEach((timeout) => {
-                clearTimeout(timeout);
-            });
+            if (timeouts) {
+                Object.values(timeouts).forEach((timeout) => {
+                    if (timeout) {
+                        clearTimeout(timeout);
+                    }
+                });
+            }
         };
     }, []);
 
