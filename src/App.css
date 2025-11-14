@@ -32,7 +32,7 @@
 .chat_header h1 {
     font-size: 28px;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin: 0;
 }
 
 .chat_header p {
@@ -71,6 +71,18 @@
     text-align: center;
     color: #666;
     padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome_logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    animation: fadeIn 0.5s ease-in;
 }
 
 .welcome_message p {
@@ -248,19 +260,6 @@
     }
 }
 
-.matched_question {
-    margin-top: 6px;
-    padding: 6px 12px;
-    background: #f0f0f0;
-    border-radius: 6px;
-    font-size: 12px;
-    color: #666;
-}
-
-.message_user .matched_question {
-    display: none;
-}
-
 .loading_dots {
     display: flex;
     gap: 4px;
@@ -366,6 +365,11 @@
 
     .chat_header h1 {
         font-size: 24px;
+    }
+
+    .welcome_logo {
+        width: 60px;
+        height: 60px;
     }
 
     .input_container {
